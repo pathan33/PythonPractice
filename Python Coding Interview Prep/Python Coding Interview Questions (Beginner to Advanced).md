@@ -72,7 +72,7 @@ In this section, we cover the basics of Python, which is ideal for those just st
 This level builds a strong foundation, ensuring you're well-prepared to move on to more advanced topics.
 
 ## 1. What is Python?
-
+<a href="https://www.w3schools.com/python/python_intro.asp">Python</a>
 Python is an interpreted, high-level, general-purpose programming language. It emphasizes code readability with its use of significant indentation. Python supports multiple programming paradigms, including structured (particularly procedural), object-oriented, and functional programming.
 
 ---
