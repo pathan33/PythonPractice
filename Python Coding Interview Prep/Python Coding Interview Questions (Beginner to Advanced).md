@@ -197,12 +197,99 @@ _Here are the key features of Python that make it one of the most popular progra
 
 PEP 8 is the Python Enhancement Proposal that provides guidelines and best practices for writing Python code. It covers various aspects such as naming conventions, code layout, and indentation.
 
+**PEP 8** is the **official style guide for writing Python code.**
+It stands for **Python Enhancement Proposal 8**, and it provides conventions on how to format Python code for maximum **readability**, **consistency**, and **maintainability** across the Python community.
+
+**🧭 Key Aspects of PEP 8:**
+1. Indentation
+  * Use 4 spaces per indentation level.
+    def greet():
+      print("Hello")
+**2. Line Length**
+  * Limit lines to 79 characters (or 72 for docstrings).
+
+**3. Blank Lines**
+  * Use blank lines to separate functions, classes, and blocks of code.
+
+**4. Imports**
+  * Imports should be on separate lines and at the top of the file.
+    import os
+    import sys
+
+**5. Naming Conventions**
+  * Functions and variables: lowercase_with_underscores
+  * Classes: CapitalizedWords
+  * Constants: ALL_CAPS E.g :- MAX_RETRIES = 5
+    
+**6. Spacing**
+  * No extra spaces inside parentheses, brackets, or braces.
+    x = func(a, b)
+    
+**7. Comments**
+  * Should be complete sentences.
+  * Use inline comments sparingly, and start them with at least two spaces from the code.
+
+**8. Docstrings**
+  * Use triple quotes for documentation.
+    def add(a, b):
+      """Return the sum of a and b."""
+      return a + b
+    
+**🛠 Tools to Enforce PEP 8:**
+  * flake8
+  * black (autoformatter)
+  * pylint
+  * autopep8
+
+**Why It Matters:**
+PEP 8 helps teams write Python code that’s:
+  * Easier to read and debug
+  * More consistent across projects
+  * Widely accepted and community-compliant
+    
 ---
 
 ## 5. How do you manage memory in Python?
 
 Python uses automatic memory management and a garbage collector to handle memory. The garbage collector recycles memory when objects are no longer in use.
 
+Python manages memory automatically using a combination of **dynamic memory allocation, reference counting, and garbage collection**. Here's a breakdown of how memory is managed in Python:
+
+**🧠 1. Automatic Memory Management**
+Python abstracts memory allocation and deallocation — you don't need to manage it manually as in C/C++.
+
+**🔁 2. Reference Counting**
+Each object in Python has an internal counter that tracks how many references point to it.
+When you assign a value to a variable:
+  a = [1, 2, 3]
+  b = a  # Reference count increases
+
+When the reference count drops to zero, the memory is released.
+
+**🧹 3. Garbage Collector (GC)**
+Python includes a cyclic garbage collector to detect and clean up reference cycles (where objects reference each other but are otherwise unreachable).
+
+This is especially useful for complex data structures like graphs or trees.
+Triggered automatically or manually via:
+  import gc
+  gc.collect()
+
+**📦 4. Memory Pools (CPython-specific)**
+Python (CPython implementation) uses pymalloc, a specialized memory allocator that manages small objects (<= 512 bytes) efficiently in memory pools.
+
+**✅ 5. Efficient Object Reuse**
+* Python reuses memory for small integers and interned strings for performance.
+  x = 10
+  y = 10
+  print(id(x) == id(y))  # True
+
+**⚠️ 6. Best Practices to Manage Memory in Python**
+  * Avoid creating unnecessary large data structures.
+  * Delete unneeded variables using del.
+  * Use generators instead of lists for large sequences.
+  * Close files and connections explicitly.
+  * Use memory profiling tools like tracemalloc, memory_profiler, or objgraph.
+    
 ---
 
 ## 6. What are Python's data types?
