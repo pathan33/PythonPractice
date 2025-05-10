@@ -294,20 +294,51 @@ Python (CPython implementation) uses pymalloc, a specialized memory allocator th
 
 ## 6. What are Python's data types?
 
-* Numeric types: `int`, `float`, `complex`
-* Sequence types: `list`, `tuple`, `range`
-* Text type: `str`
-* Set types: `set`, `frozenset`
-* Mapping type: `dict`
-* Boolean type: `bool`
-* Binary types: `bytes`, `bytearray`, `memoryview`
+<a href="https://www.w3schools.com/python/python_variables.asp">Variables</a>
+
+<a href="https://www.w3schools.com/python/python_datatypes.asp">DataTypes</a>
+
+![image](https://github.com/user-attachments/assets/905694fa-edb1-49c5-9b9e-71953ad66f9c)
 
 ---
 
 ## 7. What is the difference between a list and a tuple?
+[List](https://www.w3schools.com/python/python_lists.asp)
 
-* List: Mutable, can be changed after creation.
-* Tuple: Immutable, cannot be changed after creation.
+[Tuple](https://www.w3schools.com/python/python_tuples.asp)
+
+The main difference between a list and a tuple in Python is mutability:
+  * _List_: **Mutable**, can be changed after creation.
+  * _Tuple_: **Immutable**, cannot be changed after creation.
+
+**🔁 List (list)**
+  ✅ Mutable: You can modify (add, remove, change) elements.
+  
+  🔀 Slower (slightly), due to dynamic memory and flexibility.
+  
+  📐 Syntax: Square brackets []
+  
+      my_list = [1, 2, 3]
+      my_list.append(4)    # You can modify it
+      my_list[0] = 10      # You can reassign elements
+
+**🔒 Tuple (tuple)**
+  🚫 Immutable: Once created, cannot be changed.
+  
+  ⚡ Faster and more memory-efficient.
+  
+  ✅ Hashable (can be used as dictionary keys or set elements).
+  
+  📐 Syntax: Parentheses ()
+  
+      my_tuple = (1, 2, 3)
+      ## my_tuple[0] = 10   # ❌ Error: Tuples are immutable
+
+![image](https://github.com/user-attachments/assets/82482538-00c1-4f91-83ef-cbfb762395aa)
+
+**📝 When to Use:**
+  * Use a list when your data might change (e.g., a to-do list).
+  * Use a tuple when your data should remain constant (e.g., days of the week).
 
 ---
 
