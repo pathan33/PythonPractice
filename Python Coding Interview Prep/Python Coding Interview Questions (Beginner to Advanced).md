@@ -124,20 +124,11 @@ The Python Virtual Machine (PVM) reads and interprets the bytecode, executing in
 This is where Python is truly interpreted.
 It's slower than compiled languages (like C++) but allows dynamic features and easy debugging.
 
-**Diagram Overview:**
-Your Code (.py)
-      ↓
-Compilation
-      ↓
-Bytecode (.pyc)
-      ↓
-Python Virtual Machine
-      ↓
-Execution
+![image](https://github.com/user-attachments/assets/60caf898-4f76-4497-968b-4c2ac1bf9052)
 
-Optional:
-Some implementations (like PyPy) use a Just-In-Time (JIT) compiler to improve speed by compiling bytecode to machine code at runtime.
----
+**Optional**
+Some implementations (like **PyPy**) use a Just-In-Time (JIT) compiler to improve speed by compiling bytecode to machine code at runtime 
+
 ---
 
 ## 3. What are Python's key features?
