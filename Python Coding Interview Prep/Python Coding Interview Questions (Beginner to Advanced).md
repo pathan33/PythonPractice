@@ -344,15 +344,47 @@ The main difference between a list and a tuple in Python is mutability:
 
 ## 8. How do you handle exceptions in Python?
 
-Using the `try-except` block:
 
-```python
-try:
-    # code that may raise an exception
-except SomeException as e:
-    # code to handle the exception
 
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/1b010015-c9c0-45f6-b0a3-cd6fabecd8f4)
+
 
 ---
 
